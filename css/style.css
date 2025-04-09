@@ -2,7 +2,7 @@
 @import"login.css";
 
 
-root {
+:root {
     --primary-color: #6c63ff;
     --primary-hover: #5a52d5;
     --bg-dark: #121212;
@@ -37,7 +37,7 @@ body {
     overflow-x: hidden;
 }
   
-  body::before{
+body::before{
     content: '';
     position: absolute;
     top: -100px;
