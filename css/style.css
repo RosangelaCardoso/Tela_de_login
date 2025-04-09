@@ -50,7 +50,7 @@ body::before{
     z-index: -1;
 }
   
-  body::after {
+ body::after {
     content: '';
     position: absolute;
     bottom: -100px;
