@@ -1,0 +1,14 @@
+. Login-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 450px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+. Login-container::before {
+
+}
