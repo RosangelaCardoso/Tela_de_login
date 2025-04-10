@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 :root {
@@ -12,22 +11,22 @@
     --bg-dark: #121212;
     --card-bg: #1e1e1e;
     --text-primary: #fff;
-    --text-secundary: #b3b3b3;
+    --text-secundary: #b3b3b3; /* (opcional: 'secondary' com 'c') */
     --error-color: #ff6b6b;
-    --sucess-color: #4caf50;
+    --sucess-color: #4caf50; /* erro aqui: 'sucess' -> 'success' */
     --input-bg: #2c2c2c;
     --border-radius: 8px;
     --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     --transition: all 0.3s ease;
 }
 
+/* ❌ Repetição desnecessária do seletor universal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 body {
     background-color: var(--bg-dark);
@@ -40,8 +39,8 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-  
-body::before{
+
+body::before {
     content: '';
     position: absolute;
     top: -100px;
@@ -53,8 +52,8 @@ body::before{
     opacity: 0.3;
     z-index: -1;
 }
-  
- body::after {
+
+body::after {
     content: '';
     position: absolute;
     bottom: -100px;
