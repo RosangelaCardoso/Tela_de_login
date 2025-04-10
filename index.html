@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <meta name="description" content="pagina de login segura e elegante">
-    <meta name="keywords" content="login,acesso, segurança, conta">
-    <title>login | minha plataforma</title>
+    <meta name="description" content="Página de Login Segura e Elegante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="login, acesso, segurança, conta">
+    <title>Login | Minha Plataforma </title>
     <link rel="stylesheet" href="./css/style.css">
-    </head>
+</head>
+
 <body>
-    <main class="login-container">
-        <header>
-            <h1> Bem-Vindos</h1>
-            <p class="subtitle">Entre com suas credenciais para acessar</p>
-        </header>
-        <form action="/login" method="POST">
-            <div class=" form-group">
-                <label for="email"> Email ou Usuario</label>
-                <div class="input-group">
-                    <input type="email" id="email" name="email" placeholder= "Seu email ou nome de usuario" required autofocus>
-                </div>
+    <div class="card-login">
+        <main class="Login-container">
+            <header>
+                <h1>Login</h1>
+                
+            </header>
+            <form action="/login" method="POST">
                 <div class="form-group">
-                    <label for="password">Senha</label>
+                    
                     <div class="input-group">
-                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                        <label for="email"> </label>
+                        <input type="email" name="email" id="email" placeholder="E-mail " required
+                            autofocus>
                     </div>
-                    <div class="forgot-password">
-                        <a href="/recuperar-senha"> Esqueceu sua senha?</a>
-                    </div>
+                </div>
 
-                    <div class="options">
-                        <div class="remember-me">
-                            <input type="checkbox" id="remember-me" name="remember">
-                            <label for="remember-me">Lembrar-me</label>
-
-                            <label for="remeber">lembrar-me</label>
-                        </div>
-                    <button type="submit">Entrar</button>
-                    </form>
-
-                    <div class="divider">
-                        <span> Ou continue com</span>
+                <div class="form-group">
+                    
+                    <div class="input-group">
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" placeholder="Senha" required>
                     </div>
+                </div>
+                <div class="btn">
+                    <input class="btn-submit"type="submit"value = "Acessar">
+                </div>
+                <div class="forget-password">
+                    <a href="/criar-conta">Já é assinante e não tem login?</a>
+                    <a href="/recuperar-senha">Esqueceu a senha?</a>
+                </div>
+                <div class="options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Lembrar-me</label>
+                    </div>
+                </div>
 
-                    <div class="Social-Login">
-                        <a href="#" class="social-btn" aria-label="Entrar com google">G</a>
-                        <a href="#" class="social-btn" aria-label="Entrar com facebook">F</a>
-                        <a href="#" class="social-btn" aria-label="Entrar com Apple">A</a>
-                    </div>
-                    <div class="singup-link">
-                        Não tem uma conta? <a href="/cadastro"> Criar conta</a>
-                    </div>
+                <button type="submit"> Entrar </button>
 
-                    </div>
-    
+
+
+            </form>
+
+            <div class="divider">
+                <span>Ou continue com</span>
             </div>
-        </form>
-    </main>
-</body>
-</html>
 
+            <div class="social-login">
+                <a href="#" class="social-btns" aria-label="Entrar com Google">G</a>
+                <a href="#" class="social-btns" aria-label="Entrar com Facebook">f</a>
+                <a href="#" class="social-btns" aria-label="Entrar com Apple">A</a>
+            </div>
+
+            <div class="singup-link">
+                Não tem uma conta? <a href="/cadastro">Criar Conta</a>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>

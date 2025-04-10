@@ -1,3 +1,6 @@
+
+
+
 .login-container {
     background-color: var(--card-bg);
     width: 100%;
@@ -32,7 +35,7 @@ h1 {
 }
 
 .subtitle {
-    color: var(--text-secondary); /* corrigido de 'secundary' para 'secondary' */
+    color: var(--text-secundary);
     font-size: 0.95rem;
 }
 
@@ -61,16 +64,16 @@ input {
     border-radius: var(--border-radius);
     color: var(--text-primary);
     font-size: 1rem;
-    transition: var(--transition);
+    transition: var(--transition); 
 }
 
-input:focus {
+input:focus{
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
 }
 
 input::placeholder {
-    color: var(--text-secondary); /* corrigido também */
+    color: var(--text-secundary);
     opacity: 0.7;
 }
