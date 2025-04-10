@@ -1,3 +1,4 @@
+
 .login-container {
     background-color: var(--card-bg);
     width: 100%;
@@ -76,7 +77,7 @@ input::placeholder {
 }
 
 .forgot-password {
-    texto-align: right
+    text-align: right;
     margin: top 0.5em;
 }
 
